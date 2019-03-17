@@ -17,16 +17,13 @@ void minimumBribes(vector<int> q) {
             int temp = q[i];
             q[i] = q[i - 1];
             q[i - 1] = temp;
-
-          } 
-          else if (q[i - 2] == (i + 1)) { //  5
+          } else if (q[i - 2] == (i + 1)) { //  5
             ans += 2;
             int temp = q[i - 2];
             q[i - 2] = q[i - 1];
             q[i - 1] = q[i];
             q[i] = temp;
-          } 
-          else {
+          } else {
             cout << "Too chaotic\n";
             return;
           }

@@ -10,7 +10,7 @@ int sherlockAndAnagrams(string s) {
     {
         for(int j = 1;j<= n-i;j++)
         {
-            string ss = s.substr(i,j); 
+            string ss = s.substr(i,j);
             sort(ss.begin(),ss.end());
             mp[ss]++;
             cout << ss << endl;
@@ -22,7 +22,7 @@ int sherlockAndAnagrams(string s) {
     {
         long long temp = it->second;
         if(temp!=0)
-        {   
+        {
           ans += (temp* (temp-1))/2;
         }
     }
